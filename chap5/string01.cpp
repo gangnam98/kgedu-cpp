@@ -27,12 +27,12 @@ using namespace std;
     //남발하면 메모리 낭비가 심해진다.
 } */
 
-/* int main(){
+int main(){
     string stnA;
-    ->string클라스로 만든 stnA객체
+    // ->string클라스로 만든 stnA객체
     cout<<"단어 입력>";
     cin>>stnA;
-    ->istream클라스로 만든 cin객체
+    // ->istream클라스로 만든 cin객체
     cout<<"stnA :"<<stnA<<endl;
     cout<<endl; 
 
@@ -40,6 +40,8 @@ using namespace std;
     cout<<"문장 입력>";
     cin.ignore(100,'\n');
     //ignore안쓰면 \n가있어서 그냥 넘어가 버린다.
+    //ignore(읽어들일 문자의 개수, 읽어들이면 종료할 문자)
+    //
     getline(cin,stnB);
     //getline(입력스트림 오브젝트, 문자열을 저장할 string객체, 종결 문자);
     //종결문자는 지정하지 않으면 /n으로 인식.
@@ -48,7 +50,7 @@ using namespace std;
 
     //cin은 입력 스트림에 대응을 시킬수있는 객체
 
-} */
+}
 
 /* int main(){
     string ta="new";
@@ -58,30 +60,25 @@ using namespace std;
     
 } */
 
-bool AnswerCheck(string s1,string s2)
-{
-    return s1==s2;
-}
+// bool AnswerCheck(string s1,string s2)
+// {
+//     return s1==s2;
+// }
 
 
-int main(){
-    string quiz ="dog";
-    string answer;
+// int main(){
+//     string quiz ="dog";
+//     string answer;
 
-    cout<<"강아지 단어 입력"<<endl;
-    cout<<"힌트 : 첫글자("<<quiz[0]<<")"<<endl;
-    cin>>answer;
-    if(AnswerCheck(answer,quiz))
-    {
-        cout<<"Your answer is correct!!"<<endl;
-    }
-    else
-    {
-        cout<<"Try again!!"<<endl;
-    }
-
-    
-
-
-
-}
+//     cout<<"강아지 단어 입력"<<endl;
+//     cout<<"힌트 : 첫글자("<<quiz[0]<<")"<<endl;
+//     cin>>answer;
+//     if(AnswerCheck(answer,quiz))
+//     {
+//         cout<<"Your answer is correct!!"<<endl;
+//     }
+//     else
+//     {
+//         cout<<"Try again!!"<<endl;
+//     }
+// }
